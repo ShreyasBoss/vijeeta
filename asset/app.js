@@ -84,22 +84,22 @@ function updateimage(img)
    	var userw = image.width;
    	var userh = image.height;
    	var imagex=300;
-   	var imagey=670;
-   	if(image.width!=760)
+   	var imagey=550;
+   	if(image.width!=810)
    	{
-   		var xper=(1090*100)/image.width;
+   		var xper=(810*100)/image.width;
    		userw=image.width*xper/100;
    		userh=image.height*xper/100;
 
    		var padd=0;
-       	if(userh>1090)
+       	if(userh>810)
    		{
-   			padd=(userh-1090)/2
+   			padd=(userh-810)/2
    			imagey=imagey-padd
    		}
-   		if(userh<1090)
+   		if(userh<810)
    		{
-   			padd=(1090-userh)/2
+   			padd=(810-userh)/2
    			imagey=imagey+padd
    		}
    	}
